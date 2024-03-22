@@ -1,0 +1,90 @@
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+  font: small-caps 100%/200% serif;
+  padding: 20px;
+  text-align: left;
+  color: rgb(119, 116, 116);
+}
+
+h1 {
+  font-family: "Courier New", monospace;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  color: rgb(106, 103, 103);
+  margin-bottom: 20px;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(2, 2, 2);
+    margin-bottom: 20px;
+}
+h3{
+    padding: 20px;
+    text-align: left;
+    font-size: 36px;
+    color: rgb(2, 2, 2);
+    margin-bottom: 20px; 
+}
+
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      ". arriba ." 1fr
+      "izquierda . derecha" 1fr
+      ". abajo ." 1fr
+      / 1fr 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .arriba {
+    border-top: 5px solid rgba(234, 83, 83, 1);
+    grid-area: arriba;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+  .izquierda { 
+    grid-area: izquierda;
+    float: right;
+    border-top: 5px solid #62dada;
+    margin-left: 40px;
+    color: rgb(125, 125, 128);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+  .derecha { 
+    grid-area: derecha;
+    border-top: 5px solid #4a9dfc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+  .abajo {
+    border-top: 5px solid #fc9b1d;
+    grid-area: abajo;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+ }
+
+figure {
+
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px; 
+}
+
+img{
+    float: left;
+    padding-left: 340px;
+    text-align: end;
+}
